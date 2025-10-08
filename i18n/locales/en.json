@@ -1,0 +1,144 @@
+{
+  "tab": {
+    "home": "Home",
+    "wallet": "Wallet",
+    "kitchen": "Kitchen"
+  },
+  "home": {
+    "heading": "Here are your orders for this week",
+    "weekly_orders": "Weekly Orders",
+    "total_orders": "Total Orders",
+    "scheduled_menu": "Scheduled Menu",
+    "today": "Today",
+    "delivered": "Delivered",
+    "breakfast_orders": "Breakfast orders",
+    "lunch_orders": "Lunch orders",
+    "dinner_orders": "Dinner orders",
+    "today_kitchen_on": "Today kitchen is ON",
+    "today_kitchen_off": "Today kitchen is OFF",
+    "close_kitchen": "Close Kitchen for Today",
+    "close_kitchen_info": "Are you sure you want to close the kitchen today?",
+    "yes": "YES",
+    "cancel": "CANCEL"
+  },
+  "kitchen": {
+    "owner_details": "Owner details",
+    "banking_details": "Banking details",
+    "order_history": "Order history",
+    "kitchen_meals": "Kitchen meals",
+    "scheduled_menu": "Scheduled Menu",
+    "earings": "Earnings",
+    "advance_settings": "Advance settings",
+    "privacy_policy": "Privacy Policy",
+    "contact_us": "Contact us",
+    "terms_conditions": "Terms and conditions",
+    "logout": "Logout",
+    "logout_alert": "Are you sure you want to logout?",
+    "yes": "YES",
+    "cancel": "CANCEL"
+  },
+  "wallet": {
+    "wallet": "Wallet",
+    "balance": "Balance",
+    "withdraw": "Withdraw",
+    "withdraw_info": "You can withdraw your wallet money to your linked bank account",
+    "transaction_history": "Transaction history",
+    "transaction_id": "Transaction ID",
+    "credit_source": "Credit Source"
+  },
+  "login": {
+    "kitchen_verification": "Kitchen Verification",
+    "verification_info": " Please enter your 10 digit mobile number \n associated with your kitchen",
+    "phone_placeholder": "Enter 10 digit phone number",
+    "submit": "Submit"
+  },
+  "otp": {
+    "otp_verification": "OTP Verification",
+    "otp_info": "We have send you an OTP to {{mobile}} \n via SMS",
+    "change_number": "Change number",
+    "submit": "Submit"
+  },
+  "owner": {
+    "owner_details": "Owner Details",
+    "full_name": "Full Name",
+    "email": "Email",
+    "contact_number": "Contact Number",
+    "fssai_license": "FSSAI License (Optional)"
+  },
+  "banking": {
+    "banking_details": "Banking Details",
+    "bank_name": "Bank Name",
+    "bank_account_number": "Bank Account Number",
+    "bank_ifsc": "Bank IFSC",
+    "upi_id": "UPI ID",
+    "choose_payment_mode": "Choose payment mode",
+    "bank_account": "Bank Account",
+    "save": "Save"
+  },
+  "meals": {
+    "kitchen_meals": "Kitchen meals",
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "active": "Active",
+    "meal": "Meal",
+    "price": "Price",
+    "disable_meal": "Disable Meal",
+    "disable_meal_info": "You want to disable \"{{mealName}}\"",
+    "yes": "YES",
+    "cancel": "CANCEL"
+  },
+  "earnings": {
+    "earnings": "Earnings",
+    "todays_earning": "TODAY'S EARNING",
+    "orders": "Orders",
+    "last_week": "Last Week",
+    "last_month": "Last Month",
+    "all_time": "Last Month",
+    "view_order_history": "View Order History"
+  },
+  "advance_settings": {
+    "advance_settings": "Advanced Settings",
+    "delete_your_account": "Delete your account",
+    "delete_account": "Delete account",
+    "delete_info": "This action will delete you account along with all the data and active meals, you want to delete?",
+    "yes": "YES",
+    "cancel": "CANCEL"
+  },
+  "orders": {
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "orders": "Orders",
+    "prepare": "Prepare",
+    "assign": "Assign",
+    "dish": "Dish",
+    "no_meals": "No Meals Found",
+    "you_will_need": "You will need",
+    "meal_item": "Meal Item",
+    "quantity": "Quantity",
+    "customer": "Customer",
+    "submit_delivery": "Submit delivery",
+    "delivery": "Delivery",
+    "no_deliveries": "No Deliveries Found"
+  },
+  "order_history": {
+    "order_history": "Order History"
+  },
+  "scheduled_meals": {
+    "scheduled_menu": "Scheduled Menu",
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "dish": "Dish",
+    "price": "Price",
+    "no_breakfast_found": "No breakfast found",
+    "no_lunch_found": "No lunch found",
+    "no_dinner_found": "No dinner found"
+  },
+  "contact_us": {
+    "contact_us": "Contact us",
+    "phone": "Phone",
+    "email": "Email"
+  }
+}

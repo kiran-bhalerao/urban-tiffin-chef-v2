@@ -1,0 +1,144 @@
+{
+  "tab": {
+    "home": "होम",
+    "wallet": "वॉलेट",
+    "kitchen": "रसोई"
+  },
+  "home": {
+    "heading": "ये रहे आपके इस हफ्ते के ऑर्डर्स",
+    "weekly_orders": "हफ्ते के ऑर्डर्स",
+    "total_orders": "कुल ऑर्डर्स",
+    "scheduled_menu": "हफ्ते का मेन्यू",
+    "today": "आज",
+    "delivered": "डिलीवर हो गया",
+    "breakfast_orders": "नाश्ते के ऑर्डर्स",
+    "lunch_orders": "दोपहर के खाने के ऑर्डर्स",
+    "dinner_orders": "रात के खाने के ऑर्डर्स",
+    "today_kitchen_on": "आज रसोई चालू है",
+    "today_kitchen_off": "आज रसोई बंद है",
+    "close_kitchen": "आज के लिए रसोई बंद करें",
+    "close_kitchen_info": "क्या आप सच में आज रसोई बंद करना चाहते हैं?",
+    "yes": "हाँ",
+    "cancel": "कॅन्सल करें"
+  },
+  "kitchen": {
+    "owner_details": "मालिक की जानकारी",
+    "banking_details": "बैंक की जानकारी",
+    "order_history": "ऑर्डर इतिहास",
+    "kitchen_meals": "रसोई का खाना",
+    "scheduled_menu": "हफ्ते का मेन्यू",
+    "earings": "कमाई",
+    "advance_settings": "अडवांस सेटिंग्स",
+    "privacy_policy": "प्रायव्हसी पोलिसी",
+    "contact_us": "संपर्क करें",
+    "terms_conditions": "नियम और शर्तें",
+    "logout": "लॉगआउट",
+    "logout_alert": "क्या आप लॉग आउट करना चाहते हैं?",
+    "yes": "हाँ",
+    "cancel": "कॅन्सल करें"
+  },
+  "wallet": {
+    "wallet": "वॉलेट",
+    "balance": "बैलेंस",
+    "withdraw": "पैसे निकाले",
+    "withdraw_info": "आप वॉलेट से अपने लिंक किए गए बैंक खाते में पैसा निकाल सकते हैं",
+    "transaction_history": "लेन-देन का इतिहास",
+    "transaction_id": "लेन-देन आईडी",
+    "credit_source": "क्रेडिट सौर्स"
+  },
+  "login": {
+    "kitchen_verification": "रसोई वेरिफिकेशन",
+    "verification_info": "कृपया अपनी रसोई से जुड़ा 10 अंकों का मोबाइल नंबर डालें",
+    "phone_placeholder": "10 अंकों का मोबाइल नंबर डालें",
+    "submit": "सबमिट करें"
+  },
+  "otp": {
+    "otp_verification": "OTP वेरिफिकेशन",
+    "otp_info": "हमने आपको {{mobile}} पर ओटीपी भेजा है",
+    "change_number": "नंबर बदलें",
+    "submit": "सबमिट करें"
+  },
+  "owner": {
+    "owner_details": "मालिक की जानकारी",
+    "full_name": "पूरा नाम",
+    "email": "ईमेल",
+    "contact_number": "संपर्क नंबर",
+    "fssai_license": "FSSAI लाइसेंस (वैकल्पिक)"
+  },
+  "banking": {
+    "banking_details": "बैंक की जानकारी",
+    "bank_name": "बैंक का नाम",
+    "bank_account_number": "बैंक खाता नंबर",
+    "bank_ifsc": "बैंक IFSC",
+    "upi_id": "UPI आईडी",
+    "choose_payment_mode": "भुगतान का तरीका चुनें",
+    "bank_account": "बैंक खाता",
+    "save": "सेव करें"
+  },
+  "meals": {
+    "kitchen_meals": "रसोई के भोजन",
+    "breakfast": "नाश्ता",
+    "lunch": "दोपहर का खाना",
+    "dinner": "रात का खाना",
+    "active": "सक्रिय",
+    "meal": "भोजन",
+    "price": "मूल्य",
+    "disable_meal": "भोजन बंद करें",
+    "disable_meal_info": "क्या आप \"{{mealName}}\" बंद करना चाहते हैं?",
+    "yes": "हाँ",
+    "cancel": "कॅन्सल करें"
+  },
+  "earnings": {
+    "earnings": "कमाई",
+    "todays_earning": "आज की कमाई",
+    "orders": "ऑर्डर्स",
+    "last_week": "पिछला हफ्ता",
+    "last_month": "पिछला महीना",
+    "all_time": "सभी समय",
+    "view_order_history": "ऑर्डर इतिहास देखें"
+  },
+  "advance_settings": {
+    "advance_settings": "अडवांस सेटिंग्स",
+    "delete_your_account": "अपना खाता हटाएं",
+    "delete_account": "खाता हटाएं",
+    "delete_info": "यह क्रिया आपका खाता और सभी डेटा हटा देगी। क्या आप इसे हटाना चाहते हैं?",
+    "yes": "हाँ",
+    "cancel": "कॅन्सल करें"
+  },
+  "orders": {
+    "breakfast": "नाश्ता",
+    "lunch": "दोपहर का खाना",
+    "dinner": "रात का खाना",
+    "orders": "ऑर्डर्स",
+    "prepare": "तैयार करें",
+    "assign": "असाइन करें",
+    "dish": "डिश",
+    "no_meals": "कोई भोजन नहीं मिला",
+    "you_will_need": "आपको चाहिए होगा",
+    "meal_item": "भोजन आइटम",
+    "quantity": "मात्रा",
+    "customer": "ग्राहक",
+    "submit_delivery": "डिलीवरी सबमिट करें",
+    "delivery": "डिलीवरी",
+    "no_deliveries": "कोई डिलीवरी नहीं मिली"
+  },
+  "order_history": {
+    "order_history": "ऑर्डर इतिहास"
+  },
+  "scheduled_meals": {
+    "scheduled_menu": "हफ्ते का मेन्यू",
+    "breakfast": "नाश्ता",
+    "lunch": "दोपहर का खाना",
+    "dinner": "रात का खाना",
+    "dish": "डिश",
+    "price": "मूल्य",
+    "no_breakfast_found": "नाश्ता नहीं मिला",
+    "no_lunch_found": "दोपहर का खाना नहीं मिला",
+    "no_dinner_found": "रात का खाना नहीं मिला"
+  },
+  "contact_us": {
+    "contact_us": "संपर्क करें",
+    "phone": "फोन",
+    "email": "ईमेल"
+  }
+}

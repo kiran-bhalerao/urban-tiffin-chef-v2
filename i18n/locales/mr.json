@@ -1,0 +1,144 @@
+{
+  "tab": {
+    "home": "होम",
+    "wallet": "वॉलेट",
+    "kitchen": "स्वयंपाकघर"
+  },
+  "home": {
+    "heading": "हे आहेत तुमचे या आठवड्याचे ऑर्डर",
+    "weekly_orders": "आठवड्याचे ऑर्डर",
+    "total_orders": "एकूण ऑर्डर",
+    "scheduled_menu": "आठवड्याचा मेनू",
+    "today": "आज",
+    "delivered": "डिलिव्हर केले",
+    "breakfast_orders": "नाश्ता ऑर्डर",
+    "lunch_orders": "दुपारच्या जेवणाचे ऑर्डर",
+    "dinner_orders": "रात्रीच्या जेवणाचे ऑर्डर",
+    "today_kitchen_on": "आज स्वयंपाकघर सुरू आहे",
+    "today_kitchen_off": "आज स्वयंपाकघर बंद आहे",
+    "close_kitchen": "आजसाठी स्वयंपाकघर बंद करा",
+    "close_kitchen_info": "तुम्हाला आज स्वयंपाकघर बंद करायचे आहे का?",
+    "yes": "होय",
+    "cancel": "कॅन्सल करा"
+  },
+  "kitchen": {
+    "owner_details": "मालकाचे डीटेल्स",
+    "banking_details": "बँकिंग डीटेल्स",
+    "order_history": "ऑर्डर इतिहास",
+    "kitchen_meals": "स्वयंपाकघरातील मेनू",
+    "scheduled_menu": "आठवड्याचा मेनू",
+    "earings": "उत्पन्न",
+    "advance_settings": "ऍडव्हान्स सेटिंग्ज",
+    "privacy_policy": "प्रायव्हसी पॉलिसी",
+    "contact_us": "आमच्याशी संपर्क साधा",
+    "terms_conditions": "अटी आणि शर्ती",
+    "logout": "लॉगआउट",
+    "logout_alert": "तुमची खात्री आहे की तुम्ही लॉगआउट करू इच्छिता?",
+    "yes": "होय",
+    "cancel": "कॅन्सल करा"
+  },
+  "wallet": {
+    "wallet": "वॉलेट",
+    "balance": "शिल्लक",
+    "withdraw": "पैसे काढा",
+    "withdraw_info": "तुम्ही तुमच्या वॉलेटमधील पैसे तुमच्या लिंक केलेल्या बँक खात्यात काढू शकता",
+    "transaction_history": "व्यवहार इतिहास",
+    "transaction_id": "व्यवहार आयडी",
+    "credit_source": "क्रेडिट सोर्स"
+  },
+  "login": {
+    "kitchen_verification": "स्वयंपाकघर व्हेरिफिकेशन",
+    "verification_info": "कृपया तुमच्या स्वयंपाकघराशी संबंधित 10 अंकी \n मोबाइल नंबर प्रविष्ट करा",
+    "phone_placeholder": "10 अंकी फोन नंबर एंटर करा",
+    "submit": "सबमिट करा"
+  },
+  "otp": {
+    "otp_verification": "OTP व्हेरिफिकेशन",
+    "otp_info": "आम्ही तुम्हाला {{mobile}} वर एसएमएस द्वारे ओटीपी \n पाठवला आहे",
+    "change_number": "नंबर बदला",
+    "submit": "सबमिट करा"
+  },
+  "owner": {
+    "owner_details": "मालकाचे डीटेल्स",
+    "full_name": "पूर्ण नाव",
+    "email": "ईमेल",
+    "contact_number": "संपर्क नंबर",
+    "fssai_license": "FSSAI परवाना (ऑप्शनल)"
+  },
+  "banking": {
+    "banking_details": "बँक डीटेल्स",
+    "bank_name": "बँकेचे नाव",
+    "bank_account_number": "बँक खाते क्रमांक",
+    "bank_ifsc": "बँक IFSC",
+    "upi_id": "UPI ID",
+    "choose_payment_mode": "पेमेंट मोड निवडा",
+    "bank_account": "बँक खाते",
+    "save": "सेव्ह करा"
+  },
+  "meals": {
+    "kitchen_meals": "स्वयंपाकघरातील जेवण",
+    "breakfast": "नाश्ता",
+    "lunch": "दुपारचे जेवण",
+    "dinner": "रात्रीचे जेवण",
+    "active": "ऍक्टिव्ह",
+    "meal": "जेवण",
+    "price": "किंमत",
+    "disable_meal": "जेवण अक्षम करा",
+    "disable_meal_info": "आपण अक्षम करू इच्छिता \"{{mealName}}\"",
+    "yes": "होय",
+    "cancel": "कॅन्सल करा"
+  },
+  "earnings": {
+    "earnings": "उत्पन्न",
+    "todays_earning": "आजची कमाई",
+    "orders": "ऑर्डर्स",
+    "last_week": "मागील आठवडा",
+    "last_month": "मागील महिना",
+    "all_time": "सर्व वेळ",
+    "view_order_history": "ऑर्डर इतिहास पहा"
+  },
+  "advance_settings": {
+    "advance_settings": "प्रगत सेटिंग्ज",
+    "delete_your_account": "तुमचे खाते हटवा",
+    "delete_account": "खाते हटवा",
+    "delete_info": "ही क्रिया तुमचे खाते आणि सर्व डेटा आणि ऍक्टिव्ह जेवण हटवेल. तुम्हाला खाते हटवायचे आहे का?",
+    "yes": "होय",
+    "cancel": "कॅन्सल करा"
+  },
+  "orders": {
+    "breakfast": "नाश्ता",
+    "lunch": "दुपारचे जेवण",
+    "dinner": "रात्रीचे जेवण",
+    "orders": "ऑर्डर्स",
+    "prepare": "तयार करा",
+    "assign": "नियुक्त करा",
+    "dish": "डिश",
+    "no_meals": "जेवण मिळाले नाही",
+    "you_will_need": "खालील आयटम तयार ठेवा",
+    "meal_item": "जेवणाचा आयटम",
+    "quantity": "प्रमाण",
+    "customer": "ग्राहक",
+    "submit_delivery": "वितरण सबमिट करा",
+    "delivery": "डिलिव्हरी",
+    "no_deliveries": "कोणतीही डिलिव्हरी\n सापडली नाही"
+  },
+  "order_history": {
+    "order_history": "ऑर्डर इतिहास"
+  },
+  "scheduled_meals": {
+    "scheduled_menu": "आठवड्याचा मेनू",
+    "breakfast": "नाश्ता",
+    "lunch": "दुपारचे जेवण",
+    "dinner": "रात्रीचे जेवण",
+    "dish": "डिश",
+    "price": "किंमत",
+    "no_breakfast_found": "नाश्ता मिळाला नाही",
+    "no_lunch_found": "दुपारचे जेवण \nमिळाले नाही",
+    "no_dinner_found": "रात्रीचे जेवण \nमिळाले नाही"
+  },
+  "contact_us": {
+    "contact_us": "आमच्याशी संपर्क साधा",
+    "phone": "फोन",
+    "email": "ईमेल"
+  }
+}
