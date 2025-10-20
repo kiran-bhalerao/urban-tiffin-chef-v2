@@ -45,6 +45,10 @@ export default function HomeLayout() {
           backgroundColor: "#fff",
           borderTopWidth: 0,
         },
+        tabBarLabelStyle: {
+          fontSize: 14,
+          fontWeight: "600",
+        },
       }}
     >
       <Tabs.Screen

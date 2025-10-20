@@ -23,8 +23,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.urbantiffinchef.app",
-      "ndkVersion": "26.1.10909125"
+      "package": "com.urbantiffinchef.app"
     },
     "plugins": [
       "expo-router",
