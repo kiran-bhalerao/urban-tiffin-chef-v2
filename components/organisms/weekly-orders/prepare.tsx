@@ -2,7 +2,6 @@ import Meal from "@/assets/images/meal.png";
 import { Text } from "@/components/ui/text";
 import { TransformedKitchensWeeklyMeals } from "@/hooks/apis/useWeeklyMeals";
 import { useQueryRefresh } from "@/hooks/util/useQueryRefresh";
-import { formatNum } from "@/lib/formate_num";
 import { cn } from "@/lib/utils";
 import { ChevronRight, Soup } from "lucide-react-native";
 import { FC, useState } from "react";
@@ -64,9 +63,11 @@ const DishItem: FC<{
             <ChevronRight color="#676767" size={22} />
           )}
         </View>
-        <Text className="text-center text-2xl font-poppins_bold">
-          {meal.quantity || "NA"}
-        </Text>
+        <View className="bg-blue-50 px-2 py-1 rounded-lg min-w-[40px]">
+          <Text className="text-center text-xl font-poppins_bold text-blue-700">
+            {meal.quantity || "NA"}
+          </Text>
+        </View>
       </View>
       {expanded && (
         <View className="mx-1 mt-2">
@@ -114,10 +115,17 @@ export const PrepareTab: FC<PrepareTabProps> = (props) => {
   // Convert the result back into an array of meal items
   const combinedMealItems = Object.values(allMealItems);
 
-  // Sorting combinedMealItems by units (converted to numbers)
-  const sortedMealItems = combinedMealItems.sort(
-    (a, b) => Number(b.units) - Number(a.units)
-  );
+  // Group meals by customer name
+  const groupedMeals = meals.reduce<
+    Record<string, TransformedKitchensWeeklyMeals["meals"]>
+  >((acc, meal) => {
+    const customerName = meal.customerName || "Unknown";
+    if (!acc[customerName]) {
+      acc[customerName] = [];
+    }
+    acc[customerName].push(meal);
+    return acc;
+  }, {});
 
   const { refreshing, onRefresh } = useQueryRefresh();
 
@@ -131,12 +139,29 @@ export const PrepareTab: FC<PrepareTabProps> = (props) => {
       }
     >
       <View className="my-1 flex-row justify-between mx-2">
-        <Text className="text-[13px] uppercase">{t("orders.dish")}</Text>
         <Text className="text-[13px] uppercase">{t("orders.orders")}</Text>
+        <Text className="text-[13px] uppercase">count</Text>
       </View>
       <View className={cn({ "flex-1": !meals.length })}>
-        {meals.map((meal, i) => {
-          return <DishItem key={i} meal={meal} />;
+        {Object.entries(groupedMeals).map(([customerName, customerMeals]) => {
+          const customerAddress = customerMeals[0]?.customerAddress;
+          return (
+            <View key={customerName} className="mb-2">
+              <View className="bg-gray-100 px-2 py-2 rounded-lg mx-0.5">
+                <Text className="text-lg font-poppins_semibold text-gray-800">
+                  {customerName}
+                </Text>
+                {customerAddress && (
+                  <Text className="text-base text-gray-600 mt-0.5">
+                    {customerAddress}
+                  </Text>
+                )}
+              </View>
+              {customerMeals.map((meal, i) => (
+                <DishItem key={i} meal={meal} />
+              ))}
+            </View>
+          );
         })}
         {!meals.length && (
           <>
@@ -155,38 +180,6 @@ export const PrepareTab: FC<PrepareTabProps> = (props) => {
           </>
         )}
       </View>
-      {!!meals.length && (
-        <>
-          <Text className="font-poppins_medium text-lg mt-3.5">
-            {t("orders.you_will_need")}
-          </Text>
-          <View className="my-1 flex-row justify-between mx-2">
-            <Text className="text-[13px] uppercase">
-              {t("orders.meal_item")}
-            </Text>
-            <Text className="text-[13px] uppercase">
-              {t("orders.quantity")}
-            </Text>
-          </View>
-          <View>
-            {sortedMealItems.map((m, i) => {
-              return (
-                <View
-                  key={i}
-                  className="flex-row flex-1 justify-between items-center bg-white px-4 py-3 mb-1.5 rounded-xl"
-                >
-                  <Text className="text-brand-dark-gray flex-1 mr-2 text-base">
-                    {m.name}
-                  </Text>
-                  <Text className="text-center text-2xl font-poppins_bold">
-                    {formatNum(m.units)}
-                  </Text>
-                </View>
-              );
-            })}
-          </View>
-        </>
-      )}
     </ScrollView>
   );
 };

@@ -92,8 +92,8 @@ android {
         applicationId 'com.urbantiffinchef.app'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 56
-        versionName "0.1.56"
+        versionCode 57
+        versionName "0.1.57"
     }
     signingConfigs {
          release {

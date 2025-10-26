@@ -6,26 +6,24 @@ import { formateFullDate } from "@/lib/formate_full_date";
 interface KitchensWeeklyMealsData {
   weeklyOrders: Record<
     string,
-    {
-      meals: {
-        name: string;
-        quantity: number;
-        mealTime: string;
-        mealPreference: string;
-        mealItems?: {
+    Record<
+      string,
+      {
+        address?: string;
+        meals: {
+          name: string;
+          quantity: number;
+          mealTime: string;
+          mealPreference: string;
+        }[];
+        mealItems: {
           name: string;
           units: string;
           date: string;
           unitLabel: string;
         }[];
-      }[];
-      mealItems: {
-        name: string;
-        units: string;
-        date: string;
-        unitLabel: string;
-      }[];
-    }
+      }
+    >
   >;
 }
 
@@ -54,6 +52,8 @@ export interface TransformedKitchensWeeklyMeals {
     quantity: number;
     mealTime: string;
     mealPreference: string;
+    customerName: string;
+    customerAddress?: string;
     mealItems?: {
       name: string;
       units: string;
@@ -82,8 +82,19 @@ export const transformKitchensWeeklyMeals = (
   const dates = Object.keys(params.weeklyMeals || {});
   const activeDay = params.activeDay || dates[0];
 
-  const meals = params.weeklyMeals?.[activeDay]?.meals || [];
-  const mealItems = params.weeklyMeals?.[activeDay]?.mealItems || [];
+  const customersData = params.weeklyMeals?.[activeDay] || {};
+  const meals = Object.entries(customersData)
+    .flatMap(([customerName, data]) =>
+      data.meals?.map((meal) => ({
+        ...meal,
+        customerName,
+        customerAddress: data.address,
+      }))
+    )
+    .filter(Boolean);
+  const mealItems = Object.values(customersData).flatMap(
+    (data) => data.mealItems
+  );
 
   return {
     meals,
